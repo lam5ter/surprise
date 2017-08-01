@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Surprise!</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<style type="text/css">
+			#frame {
+				width: 800px;
+				height: 600px;
+				background-repeat: no-repeat;
+				background-size: 100%;
+				text-align: center;
+				padding-top: 400px;
+				font-family: arial;
+				font-size: 8em;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div id="frame"></div>
+		</center>
+		<script type="text/javascript">
+			
+			$(document).ready(function () {
+				$("#frame").hover(
+					function () {
+						$(this).css("background-image", "url(https://i.ytimg.com/vi/M7WgoBhF7gc/maxresdefault.jpg)");
+					},
+					function () {
+						$(this).css("background-image", "url(http://miriadna.com/desctopwalls/images/max/Meadow-with-yellow-flowers.jpg)");
+						$(this).html("Hover your mouse over the picture.");
+					}
+				);
+			});
+				
+		</script>
+	</body>
+</html>
